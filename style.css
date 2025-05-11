@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background-color: #111;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header .nav a {
+  color: red;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+  color: yellow;
+}
+
+.home-section {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.welcome-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.carousel-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 25%;
+  background-color: #ffefef;
+  padding: 2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #c0392b;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+
+.sobre-section {
+  padding: 3rem 2rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #000;
+  color: red;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  color: yellow;
+}
+
